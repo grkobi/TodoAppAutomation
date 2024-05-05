@@ -15,4 +15,6 @@ Step 6: Install Cypress on your machine by using this command: npm install cypre
 
 Step 7: Cypress configuration phase. Run npm run runner in order to launch Cypress. First you'll be asked to choose a testing type: E2E Testing or Component Testing. We need the E2E Testing for our project. Then, on the next step, you will see a set of configuration files appropriate to your chosen testing type. Click Continue. Lastly, you're presented with the list of compatible browsers Cypress found on your system. Choose one of them.
 
-Step 8: You are all set. Click on the todoAppTest.cy.ts to start running the automated tests.
+Step 9: In order to enable Cypress to simulate hover action, which is required for this automation project, run this command: npm i cypress-real-events
+
+Step 10: You are all set. Click on the todoAppTest.cy.ts to start running the automated tests.
