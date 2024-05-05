@@ -1,5 +1,5 @@
 # TodoAppAutomation
-Short explanation on this project:
+Short explanation for running this project:
 
 Step 1: Make sure you have Node.js and Node Package Manager (npm) installed on your machine (you can do it by running the command node -v npm -v to verify which version of npm installed). If there is no npm installed run the command: npm install -g npm (from CMD). In order to install Node.js follow the instruction written here: https://nodejs.org/en/download.
 
