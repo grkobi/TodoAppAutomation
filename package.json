@@ -1,0 +1,23 @@
+{
+  "name": "todoappautomation",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "runner": "cypress open --e2e --browser chrome"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/grkobi/TodoAppAutomation.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/grkobi/TodoAppAutomation/issues"
+  },
+  "homepage": "https://github.com/grkobi/TodoAppAutomation#readme",
+  "devDependencies": {
+    "cypress": "^13.8.1",
+    "typescript": "^5.4.5"
+  }
+}
