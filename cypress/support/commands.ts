@@ -1,4 +1,5 @@
 /// <reference types="cypress" />
+import "cypress-real-events";
 // ***********************************************
 // This example commands.ts shows you how to
 // create various custom commands and overwrite
@@ -25,13 +26,17 @@
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
 //
-// declare global {
-//   namespace Cypress {
-//     interface Chainable {
-//       login(email: string, password: string): Chainable<void>
-//       drag(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
-//       dismiss(subject: string, options?: Partial<TypeOptions>): Chainable<Element>
-//       visit(originalFn: CommandOriginalFn, url: string, options: Partial<VisitOptions>): Chainable<Element>
-//     }
-//   }
-// }
+declare global {
+    namespace Cypress {
+        interface Chainable {
+            addTwoTodos(): any
+
+        }
+    }
+}
+
+Cypress.Commands.add('addTwoTodos', () => {
+    cy.get('#todo-input').should('be.visible').type('buy bananas{enter}') // add todo
+    cy.get('#todo-input').should('be.visible').type('buy bread{enter}') // add another todo
+    
+})
